@@ -46,8 +46,19 @@ class MyApp extends StatelessWidget {
           ],
         ),
         body: Container(
+            height: 400.0,
+            width: double.infinity,
+            color: Colors.red,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                  child:
 
+                  Image.network("https://cdn.pixabay.com/photo/2016/01/19/17/41/friends-1149841_1280.jpg"),
+                width: 400,
+              ),
+            ],
           ),
         ),
       ),
