@@ -45,21 +45,21 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        body: Container(
-            height: 400.0,
-            width: double.infinity,
-            color: Colors.red,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                  child:
-
-                  Image.network("https://cdn.pixabay.com/photo/2016/01/19/17/41/friends-1149841_1280.jpg"),
-                width: 400,
-              ),
-            ],
-          ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Container(
+              child: Image.network("https://www.pakutaso.com/shared/img/thumb/tomneko12151314_TP_V.jpg")
+            ),
+            Row(
+              children:[ Text("【公式】カマキリVS乾電池",
+                style:TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
+                Container(
+                    child:
+                    Icon(Icons.arrow_back_ios, ),),
+              ],
+            ),
+          ],
         ),
       ),
     );
