@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
                   child: FlatButton(
                       child: Icon(Icons.more_vert),
                     onPressed: () {
-                        //TODO
+                        //todo
                     },
                   ),
               ),
@@ -52,11 +52,102 @@ class MyApp extends StatelessWidget {
               child: Image.network("https://www.pakutaso.com/shared/img/thumb/tomneko12151314_TP_V.jpg")
             ),
             Row(
-              children:[ Text("【公式】カマキリVS乾電池",
+              children:[ Text("【公式】カマキリ VS 乾電池",
                 style:TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
                 Container(
+                  padding: EdgeInsets.only(left: 70),
                     child:
-                    Icon(Icons.arrow_back_ios, ),),
+                    SizedBox(
+                      width: 10,
+                      child: FlatButton(
+                          child: Icon(Icons.keyboard_arrow_down, ),
+                      onPressed: () {
+                      //todo
+                      },),
+                    ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Container(
+                  padding: EdgeInsets.only(left: 10),
+                  child:
+                  Text("異種格闘技戦チャンネル",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 20),
+                  child:
+                  Text("視聴回数100万回"),
+                ),
+              ],
+            ),
+            Row( //この範囲全体のRow
+              children: [
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 50,
+                      child: FlatButton(
+                        child: Icon(Icons.thumb_up),
+                        onPressed: () {
+                        //todo
+                        },
+                      ),
+                    ),
+                    Text("95万"),
+                  ],
+                ),
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 50,
+                      child: FlatButton(
+                        child: Icon(Icons.thumb_down),
+                        onPressed: () {
+                          //todo
+                        },
+                      ),
+                    ),
+                    Text("5万"),
+                  ],
+                ),
+                Container(
+                  padding: EdgeInsets.only(left: 115),
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        width: 50,
+                        child: FlatButton(
+                          child: Icon(Icons.add),
+                          onPressed: () {
+                            //todo
+                          },
+                        ),
+                      ),
+                      SizedBox(
+                        width: 50,
+                        child: FlatButton(
+                          child: Icon(Icons.subdirectory_arrow_right),
+                          onPressed: () {
+                            //todo
+                          },
+                        ),
+                      ),
+                      SizedBox(
+                        width: 50,
+                        child: FlatButton(
+                          child: Icon(Icons.flag),
+                          onPressed: () {
+                            //todo
+                          },
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ],
