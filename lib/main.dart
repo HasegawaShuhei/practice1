@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
               child: Image.network("https://www.pakutaso.com/shared/img/thumb/tomneko12151314_TP_V.jpg")
             ),
             Row(
-              children:[ Text("【公式】カマキリ VS 乾電池",
+              children:[ Text("【激震】カマキリ VS 乾電池",
                 style:TextStyle(fontWeight: FontWeight.bold, fontSize: 24),),
                 Container(
                   padding: EdgeInsets.only(left: 70),
@@ -157,9 +157,31 @@ class MyApp extends StatelessWidget {
                 itemCount: items.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    leading:
-                    Image.network("https://www.pakutaso.com/shared/img/thumb/tomcat1582_TP_V.jpg"),
-                    title: Text('${items[index]}'),
+                    contentPadding: EdgeInsets.all(8),
+                    leading: Image.network("https://www.pakutaso.com/shared/img/thumb/tomcat1582_TP_V.jpg"),
+                    title: Column(
+                      children: [
+                        Column(
+                          children: [
+                            Text('【好敵手】炊飯器　VS　滝行', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                            Container(
+                              alignment: Alignment.topLeft,
+                                padding: EdgeInsets.only(left: 35),
+                                child: Text('異種格闘技戦チャンネル', style: TextStyle(fontSize: 16),)),
+                            Row(
+                              children: [
+                                Container(
+                                    padding: EdgeInsets.only(left: 35),
+                                    child: Text("視聴回数", style: TextStyle(fontSize: 16))),
+                                Container(
+                                    padding: EdgeInsets.only(left: 20),
+                                    child: Text("400万回")),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   );
                 },
               ),
